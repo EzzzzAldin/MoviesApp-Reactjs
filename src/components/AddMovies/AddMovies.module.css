@@ -1,0 +1,21 @@
+.input {
+  width: 40%;
+  padding: 15px;
+  border: 2px solid var(--primary);
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  outline: none;
+  transition: 0.5s;
+  color: var(--primary);
+  font-family: "Cairo", sans-serif;
+  opacity: 0.5;
+  font-size: 20px;
+}
+
+.input:focus {
+  opacity: 1;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
