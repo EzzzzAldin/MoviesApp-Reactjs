@@ -1,0 +1,29 @@
+.watch-list h1 {
+  color: var(--primary);
+}
+
+.main-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.main-info .movies-count {
+  background-color: var(--secondary);
+  color: var(--off-white);
+  padding: 5px;
+  border-radius: 10%;
+  font-weight: bold;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  column-gap: 30px;
+}
+
+h2 {
+  text-align: center;
+  color: var(--secondary);
+}

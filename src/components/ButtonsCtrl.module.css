@@ -1,0 +1,22 @@
+.btns {
+  position: absolute;
+  top: 80%;
+  left: 22%;
+}
+
+.ctrl-btn {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--off-white);
+  padding: 7px;
+  border-radius: 2px;
+  transition: all 0.5s;
+}
+
+.btns i {
+  font-size: 25px;
+}
+
+.ctrl-btn:hover {
+  color: var(--secondary);
+}

@@ -1,13 +1,14 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 
 import Header from "./components/layout/Header";
-import WatchList from "./pages/WatchList";
-import Watched from "./pages/Watched";
+import WatchList from "./components/WatchList/WatchList";
+import Watched from "./components/Watched/Watched";
 import AddMovie from "./pages/AddMovie";
+import ContextProvider from "./store/GlobalContext";
 
 function App() {
   return (
-    <div className="App">
+    <ContextProvider>
       <Header />
       <Routes>
         <Route path="/" element={<Navigate replace to="/watch-list" />} />
@@ -15,7 +16,7 @@ function App() {
         <Route path="/watched" element={<Watched />} />
         <Route path="/add-movie" element={<AddMovie />} />
       </Routes>
-    </div>
+    </ContextProvider>
   );
 }
 

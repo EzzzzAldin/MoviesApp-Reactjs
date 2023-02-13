@@ -1,0 +1,15 @@
+.movie {
+  position: relative;
+  transition: all 0.5s;
+}
+
+.movie img {
+  max-width: 100%;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.movie:hover {
+  border: 2px solid var(--secondary);
+  transform: scale(1.1);
+}
